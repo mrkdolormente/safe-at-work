@@ -8,6 +8,9 @@ module.exports = {
         'primary': '#880E4F',
         'secondary': '#3F51B5',
         'warn': '#f44336'
+      },
+       zIndex: {
+        'infinity': '999',
       }
     },
   },
