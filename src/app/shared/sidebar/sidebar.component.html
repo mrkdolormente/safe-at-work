@@ -1,0 +1,11 @@
+<mat-drawer-container autosize>
+    <mat-drawer #drawer class="sw-p-5" mode="side">
+        <p>Auto-resizing sidenav</p>
+    </mat-drawer>
+
+    <mat-drawer-content class="sw-flex sw-min-h-screen sw-items-center sw-justify-center">
+        <app-nav (toggleSidebar)="toggleSidebar()"></app-nav>
+        <ng-content></ng-content>
+    </mat-drawer-content>
+
+</mat-drawer-container>

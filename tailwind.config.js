@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: "saw-",
+  prefix: "sw-",
   content: [ "./src/**/*.{html,ts}",],
   theme: {
     extend: {
@@ -10,7 +10,7 @@ module.exports = {
         'warn': '#f44336'
       },
        zIndex: {
-        'infinity': '999',
+        'infinity': 999,
       }
     },
   },

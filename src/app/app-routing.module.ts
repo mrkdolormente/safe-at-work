@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'emp',
-    loadChildren: () => import('./employer/employer.module').then((m) => m.EmployerModule),
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then((m) => m.RegisterModule),
   },
   {
     path: 'usr',

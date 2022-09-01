@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
-import { RegisterComponent } from './register/register.component';
 import { SharedModule } from '../shared/shared.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
-  declarations: [RegisterComponent, DashboardComponent],
+  declarations: [UserDashboardComponent, UserProfileComponent],
   imports: [CommonModule, UserRoutingModule, SharedModule],
 })
 export class UserModule {}

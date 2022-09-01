@@ -1,0 +1,30 @@
+<app-container>
+    <h1>General Profile Settings</h1>
+    <mat-divider></mat-divider>
+    <form
+        class="sw-flex sw-flex-col sw-pt-4">
+        <div class="sw-flex sw-flex-col sm:sw-flex-row">
+            <mat-form-field appearance="fill" class="sw-pr-1">
+                <mat-label>Firstname</mat-label>
+                <input matInput type="text" autocomplete="off">
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill" class="sw-pl-1">
+                <mat-label>Lastname</mat-label>
+                <input matInput type="text" autocomplete="off">
+                <!-- <mat-error>Min size: 10px</mat-error> -->
+            </mat-form-field>
+        </div>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" autocomplete="off">
+            <!-- <mat-error>Min size: 10px</mat-error> -->
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Company Code</mat-label>
+            <input matInput type="text">
+        </mat-form-field>
+    </form>
+</app-container>
