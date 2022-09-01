@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UserProfileComponent } from './user-profile.component';
 
 const routes: Routes = [
   {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then((m) => m.RegisterModule),
+    path: '',
+    component: UserProfileComponent,
   },
 ];
 
@@ -12,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class EmployerRoutingModule {}
+export class UserProfileRoutingModule {}

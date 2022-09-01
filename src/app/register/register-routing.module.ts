@@ -5,12 +5,14 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./user-dashboard/user-dashboard.module').then((m) => m.UserDashboardModule),
+      import('./register-user/register-user.module').then((m) => m.RegisterUserModule),
   },
   {
-    path: 'profile',
+    path: 'institution',
     loadChildren: () =>
-      import('./user-profile/user-profile.module').then((m) => m.UserProfileModule),
+      import('./register-institution/register-institution.module').then(
+        (m) => m.RegisterInstitutionModule
+      ),
   },
 ];
 
@@ -18,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class UserRoutingModule {}
+export class RegisterRoutingModule {}

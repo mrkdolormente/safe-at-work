@@ -10,7 +10,7 @@ module.exports = {
         'warn': '#f44336'
       },
        zIndex: {
-        'infinity': '999',
+        'infinity': 999,
       }
     },
   },
